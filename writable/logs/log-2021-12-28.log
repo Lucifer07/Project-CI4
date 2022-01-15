@@ -1,0 +1,33 @@
+CRITICAL - 2021-12-28 03:17:38 --> Class "App\homeModel" not found
+#0 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(801): App\Controllers\Home->__construct()
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-28 03:17:58 --> Call to a member function getBrand() on null
+#0 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-28 03:19:02 --> foreach() argument must be of type array|object, null given
+#0 C:\xampp\htdocs\repository\ci4\app\Views\home\index.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'C:\\xampp\\htdocs...', 106)
+#1 C:\xampp\htdocs\repository\ci4\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\repository\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\repository\ci4\system\Common.php(1097): CodeIgniter\View\View->render('home/index', Array, true)
+#4 C:\xampp\htdocs\repository\ci4\app\Controllers\Home.php(23): view('home/index', Array)
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-28 03:50:09 --> Call to a member function getInfoAll() on null
+#0 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\infoperusahaan->index()
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\infoperusahaan))
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}

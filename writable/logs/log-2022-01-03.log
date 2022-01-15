@@ -1,0 +1,497 @@
+CRITICAL - 2022-01-03 01:55:50 --> Call to a member function getName() on null
+#0 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\brand->insertBrand()
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\brand))
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-01-03 01:56:19 --> Call to a member function getName() on null
+#0 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\brand->insertBrand()
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\brand))
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-01-03 02:56:46 --> syntax error, unexpected token "}", expecting ";"
+#0 C:\xampp\htdocs\repository\ci4\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('blog/detail/26')
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('blog/detail/26')
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-03 02:57:40 --> syntax error, unexpected token "}", expecting ";"
+#0 C:\xampp\htdocs\repository\ci4\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\repository\ci4\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+ERROR - 2022-01-03 03:02:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 2
+CRITICAL - 2022-01-03 03:02:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 2
+#0 C:\xampp\htdocs\repository\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT komentar...', 0)
+#1 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT komentar...')
+#2 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT komentar...')
+#3 C:\xampp\htdocs\repository\ci4\app\Models\komentarModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT komentar...')
+#4 C:\xampp\htdocs\repository\ci4\app\Controllers\blog.php(28): App\Models\komentarModel->getKomen('26')
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\blog->detail('26')
+#6 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\blog))
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-01-03 03:02:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 2
+CRITICAL - 2022-01-03 03:02:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 2
+#0 C:\xampp\htdocs\repository\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT komentar...', 0)
+#1 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT komentar...')
+#2 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT komentar...')
+#3 C:\xampp\htdocs\repository\ci4\app\Models\komentarModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT komentar...')
+#4 C:\xampp\htdocs\repository\ci4\app\Controllers\blog.php(28): App\Models\komentarModel->getKomen('26')
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\blog->detail('26')
+#6 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\blog))
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-03 11:01:58 --> Undefined variable $produkcctv
+#0 C:\xampp\htdocs\repository\ci4\app\Views\admin\produk\cctv2nuansa.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 22)
+#1 C:\xampp\htdocs\repository\ci4\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\repository\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\repository\ci4\system\Common.php(1097): CodeIgniter\View\View->render('admin/produk/cc...', Array, true)
+#4 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(53): view('admin/produk/cc...', Array)
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->CCTV2NuansaAdmin()
+#6 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-03 11:07:33 --> unlink(img/): Is a directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/): I...', 'C:\\xampp\\htdocs...', 58)
+#1 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(58): unlink('img/')
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->deletecctv('10')
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#4 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-03 11:21:05 --> Cannot redeclare App\Controllers\Produk::editcctv2()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-01-03 11:31:52 --> unlink(img/): Is a directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/): I...', 'C:\\xampp\\htdocs...', 61)
+#1 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(61): unlink('img/')
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->deletecctv('13')
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#4 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-03 11:32:43 --> unlink(img/): Is a directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/): I...', 'C:\\xampp\\htdocs...', 61)
+#1 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(61): unlink('img/')
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->deletecctv('12')
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#4 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-03 11:45:26 --> Undefined variable $id
+#0 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 94)
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->editcctv2('1')
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-03 11:45:41 --> Call to undefined method App\Models\cctv2Model::getProdukcctv
+#0 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(94): CodeIgniter\Model->__call('getProdukcctv', Array)
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->editcctv2('1')
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-03 11:46:21 --> Call to undefined method App\Models\cctv2Model::getProdukcctv
+#0 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(94): CodeIgniter\Model->__call('getProdukcctv', Array)
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->editcctv2('1')
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-03 11:46:24 --> Call to undefined method App\Models\cctv2Model::getProdukcctv
+#0 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(94): CodeIgniter\Model->__call('getProdukcctv', Array)
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->editcctv2('3')
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-03 11:50:56 --> Undefined array key "dekripsi"
+#0 C:\xampp\htdocs\repository\ci4\app\Views\admin\edit\shopadmincctv.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 44)
+#1 C:\xampp\htdocs\repository\ci4\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\repository\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\repository\ci4\system\Common.php(1097): CodeIgniter\View\View->render('admin/edit/shop...', Array, true)
+#4 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(96): view('admin/edit/shop...', Array)
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->editcctv2('3')
+#6 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-03 11:52:15 --> Call to undefined method App\Models\cctv5Model::getProdukCCTV5
+#0 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(126): CodeIgniter\Model->__call('getProdukCCTV5', Array)
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->cctv5nuansaadmin()
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-03 11:54:43 --> Call to undefined method App\Models\cctv5Model::getProdukCCTV5
+#0 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(126): CodeIgniter\Model->__call('getProdukCCTV5', Array)
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->CCTV5NuansaAdmin()
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-03 11:56:59 --> Undefined variable $id
+#0 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(138): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 138)
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->editcctv5('3')
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-03 11:57:07 --> Call to undefined method App\Models\cctv2Model::getDataCCTV5
+#0 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(138): CodeIgniter\Model->__call('getDataCCTV5', Array)
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->editcctv5('3')
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-03 21:37:15 --> Invalid file: produk/cctv5Nuansa.php
+#0 C:\xampp\htdocs\repository\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('produk/cctv5Nua...')
+#1 C:\xampp\htdocs\repository\ci4\system\Common.php(1097): CodeIgniter\View\View->render('produk/cctv5Nua...', Array, true)
+#2 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(36): view('produk/cctv5Nua...', Array)
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->CCTV5Nuansa()
+#4 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-01-03 21:37:57 --> Invalid file: produk/cctv5Nuansa.php
+#0 C:\xampp\htdocs\repository\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('produk/cctv5Nua...')
+#1 C:\xampp\htdocs\repository\ci4\system\Common.php(1097): CodeIgniter\View\View->render('produk/cctv5Nua...', Array, true)
+#2 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(36): view('produk/cctv5Nua...', Array)
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->CCTV5Nuansa()
+#4 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-01-03 21:37:59 --> Invalid file: produk/cctv5Nuansa.php
+#0 C:\xampp\htdocs\repository\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('produk/cctv5Nua...')
+#1 C:\xampp\htdocs\repository\ci4\system\Common.php(1097): CodeIgniter\View\View->render('produk/cctv5Nua...', Array, true)
+#2 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(36): view('produk/cctv5Nua...', Array)
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->CCTV5Nuansa()
+#4 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-01-03 21:39:35 --> Invalid file: produk/cctv5Nuansa.php
+#0 C:\xampp\htdocs\repository\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('produk/cctv5Nua...')
+#1 C:\xampp\htdocs\repository\ci4\system\Common.php(1097): CodeIgniter\View\View->render('produk/cctv5Nua...', Array, true)
+#2 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(36): view('produk/cctv5Nua...', Array)
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->CCTV5Nuansa()
+#4 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-01-03 22:05:56 --> Class "App\Controllers\Controller" not found
+#0 C:\xampp\htdocs\repository\ci4\system\Router\Router.php(519): include_once()
+#1 C:\xampp\htdocs\repository\ci4\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('Produkrunt/runt...')
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('Produkrunt/runt...')
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-03 22:06:04 --> Invalid file: admin/shopadminrunt.php
+#0 C:\xampp\htdocs\repository\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/shopadmin...')
+#1 C:\xampp\htdocs\repository\ci4\system\Common.php(1097): CodeIgniter\View\View->render('admin/shopadmin...', Array, true)
+#2 C:\xampp\htdocs\repository\ci4\app\Controllers\Produkrunt.php(21): view('admin/shopadmin...', Array)
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produkrunt->runtAdmin()
+#4 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produkrunt))
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-01-03 22:06:20 --> Invalid file: admin/produk/shopadminrunt.php
+#0 C:\xampp\htdocs\repository\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/produk/sh...')
+#1 C:\xampp\htdocs\repository\ci4\system\Common.php(1097): CodeIgniter\View\View->render('admin/produk/sh...', Array, true)
+#2 C:\xampp\htdocs\repository\ci4\app\Controllers\Produkrunt.php(21): view('admin/produk/sh...', Array)
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produkrunt->runtAdmin()
+#4 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produkrunt))
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-01-03 22:06:27 --> Invalid file: admin/produk/shopadminrunt.php
+#0 C:\xampp\htdocs\repository\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/produk/sh...')
+#1 C:\xampp\htdocs\repository\ci4\system\Common.php(1097): CodeIgniter\View\View->render('admin/produk/sh...', Array, true)
+#2 C:\xampp\htdocs\repository\ci4\app\Controllers\Produkrunt.php(21): view('admin/produk/sh...', Array)
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produkrunt->runtAdmin()
+#4 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produkrunt))
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-01-03 22:06:44 --> Undefined array key "ukuran"
+#0 C:\xampp\htdocs\repository\ci4\app\Views\admin\produk\runtnuansa.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 28)
+#1 C:\xampp\htdocs\repository\ci4\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\repository\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\repository\ci4\system\Common.php(1097): CodeIgniter\View\View->render('admin/produk/ru...', Array, true)
+#4 C:\xampp\htdocs\repository\ci4\app\Controllers\Produkrunt.php(21): view('admin/produk/ru...', Array)
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produkrunt->runtAdmin()
+#6 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produkrunt))
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-03 22:17:00 --> Undefined array key "id_runt"
+#0 C:\xampp\htdocs\repository\ci4\app\Views\admin\edit\shopadminrunt.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 9)
+#1 C:\xampp\htdocs\repository\ci4\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\repository\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\repository\ci4\system\Common.php(1097): CodeIgniter\View\View->render('admin/edit/shop...', Array, true)
+#4 C:\xampp\htdocs\repository\ci4\app\Controllers\Produkrunt.php(50): view('admin/edit/shop...', Array)
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produkrunt->editrunt('4')
+#6 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produkrunt))
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-03 22:26:25 --> Call to a member function getError() on null
+#0 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produkrunt->updateRunt('6')
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produkrunt))
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-01-03 22:26:58 --> Allowed fields must be specified for model: App\Models\runtModel
+#0 C:\xampp\htdocs\repository\ci4\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\runt...')
+#1 C:\xampp\htdocs\repository\ci4\system\BaseModel.php(841): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\xampp\htdocs\repository\ci4\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\xampp\htdocs\repository\ci4\system\BaseModel.php(656): CodeIgniter\Model->update('6', Array)
+#4 C:\xampp\htdocs\repository\ci4\app\Controllers\Produkrunt.php(71): CodeIgniter\BaseModel->save(Array)
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produkrunt->updateRunt('6')
+#6 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produkrunt))
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-03 22:27:31 --> Allowed fields must be specified for model: App\Models\runtModel
+#0 C:\xampp\htdocs\repository\ci4\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\runt...')
+#1 C:\xampp\htdocs\repository\ci4\system\BaseModel.php(841): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\xampp\htdocs\repository\ci4\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\xampp\htdocs\repository\ci4\system\BaseModel.php(656): CodeIgniter\Model->update('8', Array)
+#4 C:\xampp\htdocs\repository\ci4\app\Controllers\Produkrunt.php(71): CodeIgniter\BaseModel->save(Array)
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produkrunt->updateRunt('8')
+#6 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produkrunt))
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-03 22:48:59 --> Undefined variable $produkrunt
+#0 C:\xampp\htdocs\repository\ci4\app\Views\admin\insert\insertrunt.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 31)
+#1 C:\xampp\htdocs\repository\ci4\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\repository\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\repository\ci4\system\Common.php(1097): CodeIgniter\View\View->render('admin/insert/in...', Array, true)
+#4 C:\xampp\htdocs\repository\ci4\app\Controllers\Produkrunt.php(28): view('admin/insert/in...', Array)
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produkrunt->tambahrunt()
+#6 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produkrunt))
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-03 22:56:13 --> Too few arguments to function App\Controllers\Produk::updatecctv2(), 0 passed in C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php on line 824 and exactly 1 expected
+#0 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->updatecctv2()
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-01-03 22:56:51 --> Too few arguments to function App\Controllers\Produk::updatecctv2(), 0 passed in C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php on line 824 and exactly 1 expected
+#0 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->updatecctv2()
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-01-03 22:57:43 --> Too few arguments to function App\Controllers\Produk::updatecctv2(), 0 passed in C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php on line 824 and exactly 1 expected
+#0 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->updatecctv2()
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-01-03 22:57:56 --> Too few arguments to function App\Controllers\Produk::updatecctv5(), 0 passed in C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php on line 824 and exactly 1 expected
+#0 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->updatecctv5()
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-01-03 23:00:54 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::save()
+#0 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->updatecctv5('4')
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-01-03 23:07:43 --> Cannot redeclare App\Controllers\Produkrunt::tambahrunt()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-01-03 23:08:06 --> Undefined property: App\Controllers\Produkrunt::$runt2Model
+#0 C:\xampp\htdocs\repository\ci4\app\Controllers\Produkrunt.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 83)
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produkrunt->runt2Admin()
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produkrunt))
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-03 23:08:33 --> Invalid file: admin/produk/runt2nuansa.php
+#0 C:\xampp\htdocs\repository\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/produk/ru...')
+#1 C:\xampp\htdocs\repository\ci4\system\Common.php(1097): CodeIgniter\View\View->render('admin/produk/ru...', Array, true)
+#2 C:\xampp\htdocs\repository\ci4\app\Controllers\Produkrunt.php(88): view('admin/produk/ru...', Array)
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produkrunt->runt2Admin()
+#4 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produkrunt))
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-01-03 23:09:25 --> Undefined property: App\Controllers\Produkrunt::$runt5Model
+#0 C:\xampp\htdocs\repository\ci4\app\Controllers\Produkrunt.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 85)
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produkrunt->runt2Admin()
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produkrunt))
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-03 23:14:36 --> Invalid file: admin/insert/insertrunt2.php
+#0 C:\xampp\htdocs\repository\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/insert/in...')
+#1 C:\xampp\htdocs\repository\ci4\system\Common.php(1097): CodeIgniter\View\View->render('admin/insert/in...', Array, true)
+#2 C:\xampp\htdocs\repository\ci4\app\Controllers\Produkrunt.php(95): view('admin/insert/in...', Array)
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produkrunt->tambahrunt2()
+#4 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produkrunt))
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-01-03 23:38:03 --> syntax error, unexpected token "}"
+#0 C:\xampp\htdocs\repository\ci4\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\repository\ci4\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-01-03 23:40:06 --> Undefined variable $blog
+#0 C:\xampp\htdocs\repository\ci4\app\Views\admin\edit\editinfo.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 32)
+#1 C:\xampp\htdocs\repository\ci4\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\repository\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\repository\ci4\system\Common.php(1097): CodeIgniter\View\View->render('admin/edit/edit...', Array, true)
+#4 C:\xampp\htdocs\repository\ci4\app\Controllers\infoperusahaan.php(60): view('admin/edit/edit...', Array)
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\infoperusahaan->editinfo('1')
+#6 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\infoperusahaan))
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-03 23:40:31 --> Undefined variable $info
+#0 C:\xampp\htdocs\repository\ci4\app\Views\admin\edit\editinfo.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 9)
+#1 C:\xampp\htdocs\repository\ci4\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\repository\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\repository\ci4\system\Common.php(1097): CodeIgniter\View\View->render('admin/edit/edit...', Array, true)
+#4 C:\xampp\htdocs\repository\ci4\app\Controllers\infoperusahaan.php(60): view('admin/edit/edit...', Array)
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\infoperusahaan->editinfo('1')
+#6 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\infoperusahaan))
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-03 23:41:01 --> Undefined variable $blog
+#0 C:\xampp\htdocs\repository\ci4\app\Views\admin\edit\editinfo.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 32)
+#1 C:\xampp\htdocs\repository\ci4\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\repository\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\repository\ci4\system\Common.php(1097): CodeIgniter\View\View->render('admin/edit/edit...', Array, true)
+#4 C:\xampp\htdocs\repository\ci4\app\Controllers\infoperusahaan.php(60): view('admin/edit/edit...', Array)
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\infoperusahaan->editinfo('1')
+#6 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\infoperusahaan))
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-03 23:41:12 --> Undefined array key "fotopekerjaan"
+#0 C:\xampp\htdocs\repository\ci4\app\Views\admin\edit\editinfo.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 32)
+#1 C:\xampp\htdocs\repository\ci4\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\repository\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\repository\ci4\system\Common.php(1097): CodeIgniter\View\View->render('admin/edit/edit...', Array, true)
+#4 C:\xampp\htdocs\repository\ci4\app\Controllers\infoperusahaan.php(60): view('admin/edit/edit...', Array)
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\infoperusahaan->editinfo('1')
+#6 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\infoperusahaan))
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-03 23:46:19 --> Call to a member function getError() on null
+#0 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\infoperusahaan->updateInfo('1')
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\infoperusahaan))
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-01-03 23:47:55 --> Call to a member function getError() on null
+#0 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\infoperusahaan->updateInfo('1')
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\infoperusahaan))
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-01-03 23:48:42 --> syntax error, unexpected single-quoted string "foto2", expecting "]"
+#0 C:\xampp\htdocs\repository\ci4\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('infoperusahaan/...')
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('infoperusahaan/...')
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-03 23:48:58 --> Call to a member function getError() on null
+#0 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\infoperusahaan->updateInfo('1')
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\infoperusahaan))
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-01-03 23:58:44 --> Call to a member function getError() on null
+#0 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\infoperusahaan->updateInfo('1')
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\infoperusahaan))
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-01-03 23:59:11 --> Call to a member function getError() on null
+#0 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\infoperusahaan->updateInfo('1')
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\infoperusahaan))
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}

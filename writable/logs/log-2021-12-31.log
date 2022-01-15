@@ -1,0 +1,509 @@
+CRITICAL - 2021-12-31 05:44:05 --> syntax error, unexpected single-quoted string "blogModel", expecting "]"
+#0 C:\xampp\htdocs\repository\ci4\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('blog')
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('blog')
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-31 05:44:10 --> Class "App\Controllers\Controller" not found
+#0 C:\xampp\htdocs\repository\ci4\system\Router\Router.php(519): include_once()
+#1 C:\xampp\htdocs\repository\ci4\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('blog')
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('blog')
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-12-31 05:44:16 --> Class "App\blogModel" not found
+#0 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(801): App\Controllers\blog->__construct()
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+ERROR - 2021-12-31 05:44:25 --> Unknown column 'blog.deleted_at' in 'where clause'
+CRITICAL - 2021-12-31 05:44:25 --> Unknown column 'blog.deleted_at' in 'where clause'
+#0 C:\xampp\htdocs\repository\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\repository\ci4\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\repository\ci4\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\repository\ci4\system\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\repository\ci4\app\Controllers\blog.php(17): CodeIgniter\BaseModel->paginate(6, 'blogModel')
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\blog->index()
+#8 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\blog))
+#9 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2021-12-31 05:45:19 --> Unknown column 'blog.deleted_at' in 'where clause'
+CRITICAL - 2021-12-31 05:45:19 --> Unknown column 'blog.deleted_at' in 'where clause'
+#0 C:\xampp\htdocs\repository\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\repository\ci4\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\repository\ci4\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\repository\ci4\system\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\repository\ci4\app\Controllers\blog.php(17): CodeIgniter\BaseModel->paginate(6, 'blogModel')
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\blog->index()
+#8 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\blog))
+#9 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2021-12-31 05:45:20 --> Unknown column 'blog.deleted_at' in 'where clause'
+CRITICAL - 2021-12-31 05:45:20 --> Unknown column 'blog.deleted_at' in 'where clause'
+#0 C:\xampp\htdocs\repository\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\repository\ci4\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\repository\ci4\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\repository\ci4\system\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\repository\ci4\app\Controllers\blog.php(17): CodeIgniter\BaseModel->paginate(6, 'blogModel')
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\blog->index()
+#8 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\blog))
+#9 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2021-12-31 05:46:10 --> Unknown column 'blog.deleted_at' in 'where clause'
+CRITICAL - 2021-12-31 05:46:10 --> Unknown column 'blog.deleted_at' in 'where clause'
+#0 C:\xampp\htdocs\repository\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\repository\ci4\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\repository\ci4\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\repository\ci4\system\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\repository\ci4\app\Controllers\blog.php(17): CodeIgniter\BaseModel->paginate(6, 'blogModel')
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\blog->index()
+#8 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\blog))
+#9 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2021-12-31 05:46:21 --> Undefined variable $blogModel
+#0 C:\xampp\htdocs\repository\ci4\app\Views\blog\index.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 21)
+#1 C:\xampp\htdocs\repository\ci4\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\repository\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\repository\ci4\system\Common.php(1097): CodeIgniter\View\View->render('blog/index', Array, true)
+#4 C:\xampp\htdocs\repository\ci4\app\Controllers\blog.php(20): view('blog/index')
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\blog->index()
+#6 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\blog))
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2021-12-31 05:46:28 --> Unknown column 'blog.deleted_at' in 'where clause'
+CRITICAL - 2021-12-31 05:46:28 --> Unknown column 'blog.deleted_at' in 'where clause'
+#0 C:\xampp\htdocs\repository\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\repository\ci4\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\repository\ci4\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\repository\ci4\system\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\repository\ci4\app\Controllers\blog.php(17): CodeIgniter\BaseModel->paginate(6, 'blogModel')
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\blog->index()
+#8 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\blog))
+#9 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2021-12-31 05:46:48 --> Unknown column 'blog.deleted_at' in 'where clause'
+CRITICAL - 2021-12-31 05:46:48 --> Unknown column 'blog.deleted_at' in 'where clause'
+#0 C:\xampp\htdocs\repository\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\repository\ci4\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\repository\ci4\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\repository\ci4\system\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\repository\ci4\app\Controllers\blog.php(17): CodeIgniter\BaseModel->paginate(6, 'blogModel')
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\blog->index()
+#8 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\blog))
+#9 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2021-12-31 05:47:44 --> Cannot redeclare App\Models\blogModel::$allowedFields
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-12-31 05:48:08 --> Unknown column 'blog.deleted_at' in 'where clause'
+CRITICAL - 2021-12-31 05:48:08 --> Unknown column 'blog.deleted_at' in 'where clause'
+#0 C:\xampp\htdocs\repository\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\repository\ci4\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\repository\ci4\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\repository\ci4\system\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\repository\ci4\app\Controllers\blog.php(17): CodeIgniter\BaseModel->paginate(6, 'blogModel')
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\blog->index()
+#8 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\blog))
+#9 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2021-12-31 05:48:19 --> Unknown column 'blog.deleted_at' in 'where clause'
+CRITICAL - 2021-12-31 05:48:19 --> Unknown column 'blog.deleted_at' in 'where clause'
+#0 C:\xampp\htdocs\repository\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\repository\ci4\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\repository\ci4\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\repository\ci4\system\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\repository\ci4\app\Controllers\blog.php(17): CodeIgniter\BaseModel->paginate(6, 'blogModel')
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\blog->index()
+#8 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\blog))
+#9 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2021-12-31 05:48:20 --> Unknown column 'blog.deleted_at' in 'where clause'
+CRITICAL - 2021-12-31 05:48:20 --> Unknown column 'blog.deleted_at' in 'where clause'
+#0 C:\xampp\htdocs\repository\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\repository\ci4\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\repository\ci4\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\repository\ci4\system\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\repository\ci4\app\Controllers\blog.php(17): CodeIgniter\BaseModel->paginate(6, 'blogModel')
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\blog->index()
+#8 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\blog))
+#9 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2021-12-31 05:48:31 --> Call to undefined method App\Models\blogModel::getPekerjaan
+#0 C:\xampp\htdocs\repository\ci4\app\Controllers\blog.php(26): CodeIgniter\Model->__call('getPekerjaan', Array)
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\blog->detail('2')
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\blog))
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-31 05:48:42 --> Call to undefined method App\Models\blogModel::getPekerjaan
+#0 C:\xampp\htdocs\repository\ci4\app\Controllers\blog.php(26): CodeIgniter\Model->__call('getPekerjaan', Array)
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\blog->detail('2')
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\blog))
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-31 05:48:44 --> Call to undefined method App\Models\blogModel::getPekerjaan
+#0 C:\xampp\htdocs\repository\ci4\app\Controllers\blog.php(26): CodeIgniter\Model->__call('getPekerjaan', Array)
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\blog->detail('2')
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\blog))
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-31 05:48:59 --> Undefined array key "created_at"
+#0 C:\xampp\htdocs\repository\ci4\app\Views\blog\detailblog.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 4)
+#1 C:\xampp\htdocs\repository\ci4\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\repository\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\repository\ci4\system\Common.php(1097): CodeIgniter\View\View->render('blog/detailblog', Array, true)
+#4 C:\xampp\htdocs\repository\ci4\app\Controllers\blog.php(28): view('blog/detailblog', Array)
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\blog->detail('2')
+#6 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\blog))
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-31 05:58:44 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\repository\ci4\app\Views\produk\cctv2nuansa.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 17)
+#1 C:\xampp\htdocs\repository\ci4\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\repository\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\repository\ci4\system\Common.php(1097): CodeIgniter\View\View->render('produk/cctv2nua...', Array, true)
+#4 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(18): view('produk/cctv2nua...', Array)
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->CCTV2Nuansa()
+#6 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2021-12-31 05:59:21 --> Table 'nuansaintipersada.produkcctv' doesn't exist
+CRITICAL - 2021-12-31 05:59:21 --> Table 'nuansaintipersada.produkcctv' doesn't exist
+#0 C:\xampp\htdocs\repository\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\repository\ci4\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\repository\ci4\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\repository\ci4\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\repository\ci4\app\Models\cctv2Model.php(15): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(16): App\Models\cctv2Model->getDataCCTV2()
+#8 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->CCTV2Nuansa()
+#9 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#10 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2021-12-31 06:02:56 --> syntax error, unexpected token "}"
+#0 C:\xampp\htdocs\repository\ci4\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('Produk/cctv2Nua...')
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('Produk/cctv2Nua...')
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-31 06:03:53 --> Undefined variable $author
+#0 C:\xampp\htdocs\repository\ci4\app\Views\produk\cctv2Nuansa\detailcctv2.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 24)
+#1 C:\xampp\htdocs\repository\ci4\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\repository\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\repository\ci4\system\Common.php(1097): CodeIgniter\View\View->render('produk/cctv2Nua...', Array, true)
+#4 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(25): view('produk/cctv2Nua...', Array)
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->detailcctv2('1')
+#6 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-31 06:31:31 --> syntax error, unexpected token ";"
+#0 C:\xampp\htdocs\repository\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\repository\ci4\system\Common.php(1097): CodeIgniter\View\View->render('produk/cctv2Nua...', Array, true)
+#2 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(25): view('produk/cctv2Nua...', Array)
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->detailcctv2('1')
+#4 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-12-31 07:03:54 --> Request URI segment is out of range: 2
+#0 C:\xampp\htdocs\repository\ci4\system\HTTP\URI.php(529): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+#1 C:\xampp\htdocs\repository\ci4\app\Models\cctv2Model.php(21): CodeIgniter\HTTP\URI->getSegment(2)
+#2 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(24): App\Models\cctv2Model->getDataRelasiCCTV()
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->detailcctv2('7')
+#4 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-12-31 07:03:59 --> Request URI segment is out of range: 1
+#0 C:\xampp\htdocs\repository\ci4\system\HTTP\URI.php(529): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(1)
+#1 C:\xampp\htdocs\repository\ci4\app\Models\cctv2Model.php(21): CodeIgniter\HTTP\URI->getSegment(1)
+#2 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(24): App\Models\cctv2Model->getDataRelasiCCTV()
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->detailcctv2('7')
+#4 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-12-31 07:04:00 --> Request URI segment is out of range: 1
+#0 C:\xampp\htdocs\repository\ci4\system\HTTP\URI.php(529): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(1)
+#1 C:\xampp\htdocs\repository\ci4\app\Models\cctv2Model.php(21): CodeIgniter\HTTP\URI->getSegment(1)
+#2 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(24): App\Models\cctv2Model->getDataRelasiCCTV()
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->detailcctv2('7')
+#4 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-12-31 07:04:12 --> Request URI segment is out of range: 2
+#0 C:\xampp\htdocs\repository\ci4\system\HTTP\URI.php(529): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+#1 C:\xampp\htdocs\repository\ci4\app\Models\cctv2Model.php(21): CodeIgniter\HTTP\URI->getSegment(2)
+#2 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(24): App\Models\cctv2Model->getDataRelasiCCTV()
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->detailcctv2('7')
+#4 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+ERROR - 2021-12-31 07:04:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIMIT 4' at line 1
+CRITICAL - 2021-12-31 07:04:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIMIT 4' at line 1
+#0 C:\xampp\htdocs\repository\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM c...', 0)
+#1 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM c...')
+#2 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM c...')
+#3 C:\xampp\htdocs\repository\ci4\app\Models\cctv2Model.php(23): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#4 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(24): App\Models\cctv2Model->getDataRelasiCCTV()
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->detailcctv2('7')
+#6 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-31 07:04:24 --> Request URI segment is out of range: 1
+#0 C:\xampp\htdocs\repository\ci4\system\HTTP\URI.php(529): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(1)
+#1 C:\xampp\htdocs\repository\ci4\app\Models\cctv2Model.php(21): CodeIgniter\HTTP\URI->getSegment(1)
+#2 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(24): App\Models\cctv2Model->getDataRelasiCCTV()
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->detailcctv2('7')
+#4 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-12-31 07:05:09 --> Request URI segment is out of range: 1
+#0 C:\xampp\htdocs\repository\ci4\system\HTTP\URI.php(529): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(1)
+#1 C:\xampp\htdocs\repository\ci4\app\Models\cctv2Model.php(21): CodeIgniter\HTTP\URI->getSegment(1)
+#2 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(24): App\Models\cctv2Model->getDataRelasiCCTV()
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->detailcctv2('7')
+#4 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+ERROR - 2021-12-31 07:05:41 --> Unknown column 'Produk' in 'where clause'
+CRITICAL - 2021-12-31 07:05:41 --> Unknown column 'Produk' in 'where clause'
+#0 C:\xampp\htdocs\repository\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM c...', 0)
+#1 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM c...')
+#2 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM c...')
+#3 C:\xampp\htdocs\repository\ci4\app\Models\cctv2Model.php(24): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#4 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(24): App\Models\cctv2Model->getDataRelasiCCTV()
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->detailcctv2('7')
+#6 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2021-12-31 07:05:45 --> Unknown column 'detailcctv2' in 'where clause'
+CRITICAL - 2021-12-31 07:05:45 --> Unknown column 'detailcctv2' in 'where clause'
+#0 C:\xampp\htdocs\repository\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM c...', 0)
+#1 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM c...')
+#2 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM c...')
+#3 C:\xampp\htdocs\repository\ci4\app\Models\cctv2Model.php(24): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#4 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(24): App\Models\cctv2Model->getDataRelasiCCTV()
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->detailcctv2('7')
+#6 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2021-12-31 07:06:28 --> Unknown column 'detailcctv2' in 'where clause'
+CRITICAL - 2021-12-31 07:06:28 --> Unknown column 'detailcctv2' in 'where clause'
+#0 C:\xampp\htdocs\repository\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM c...', 0)
+#1 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM c...')
+#2 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM c...')
+#3 C:\xampp\htdocs\repository\ci4\app\Models\cctv2Model.php(24): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#4 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(24): App\Models\cctv2Model->getDataRelasiCCTV()
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->detailcctv2('7')
+#6 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2021-12-31 07:06:36 --> Unknown column 'Produk' in 'where clause'
+CRITICAL - 2021-12-31 07:06:36 --> Unknown column 'Produk' in 'where clause'
+#0 C:\xampp\htdocs\repository\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM c...', 0)
+#1 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM c...')
+#2 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM c...')
+#3 C:\xampp\htdocs\repository\ci4\app\Models\cctv2Model.php(24): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#4 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(24): App\Models\cctv2Model->getDataRelasiCCTV()
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->detailcctv2('7')
+#6 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-31 07:15:11 --> Call to undefined method App\Models\cctv2Model::getDataCCTV5
+#0 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(31): CodeIgniter\Model->__call('getDataCCTV5', Array)
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->CCTV5Nuansa()
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-31 07:15:40 --> Call to undefined method App\Models\cctv2Model::getDataCCTV5
+#0 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(34): CodeIgniter\Model->__call('getDataCCTV5', Array)
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->CCTV5Nuansa()
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-31 07:16:08 --> Call to undefined method App\Models\cctv2Model::getDataCCTV5
+#0 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(34): CodeIgniter\Model->__call('getDataCCTV5', Array)
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->CCTV5Nuansa()
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-31 07:16:28 --> Invalid file: produk/cctv5Nuansa.php
+#0 C:\xampp\htdocs\repository\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('produk/cctv5Nua...')
+#1 C:\xampp\htdocs\repository\ci4\system\Common.php(1097): CodeIgniter\View\View->render('produk/cctv5Nua...', Array, true)
+#2 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(36): view('produk/cctv5Nua...', Array)
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->CCTV5Nuansa()
+#4 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-12-31 07:20:06 --> Undefined variable $cctv5Model
+#0 C:\xampp\htdocs\repository\ci4\app\Views\produk\cctv5Nuansa\detailcctv5.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 45)
+#1 C:\xampp\htdocs\repository\ci4\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\repository\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\repository\ci4\system\Common.php(1097): CodeIgniter\View\View->render('produk/cctv5Nua...', Array, true)
+#4 C:\xampp\htdocs\repository\ci4\app\Controllers\Produk.php(45): view('produk/cctv5Nua...', Array)
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Produk->detailcctv5('2')
+#6 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-31 07:25:18 --> Class "App\Controllers\Controller" not found
+#0 C:\xampp\htdocs\repository\ci4\system\Router\Router.php(519): include_once()
+#1 C:\xampp\htdocs\repository\ci4\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('brosur')
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('brosur')
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-12-31 07:25:27 --> Undefined property: App\Controllers\brosur::$brosur
+#0 C:\xampp\htdocs\repository\ci4\app\Controllers\brosur.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 14)
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\brosur->index()
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\brosur))
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-31 07:25:39 --> Undefined variable $heading
+#0 C:\xampp\htdocs\repository\ci4\app\Views\brosur\index.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\repository\ci4\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\repository\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\repository\ci4\system\Common.php(1097): CodeIgniter\View\View->render('brosur/index', Array, true)
+#4 C:\xampp\htdocs\repository\ci4\app\Controllers\brosur.php(17): view('brosur/index', Array)
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\brosur->index()
+#6 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\brosur))
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-31 09:15:30 --> Call to undefined function App\Filters\currenet_url()
+#0 C:\xampp\htdocs\repository\ci4\system\Filters\Filters.php(173): App\Filters\sudahLogin->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('/', 'before')
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-31 09:15:30 --> Call to undefined function App\Filters\currenet_url()
+#0 C:\xampp\htdocs\repository\ci4\system\Filters\Filters.php(173): App\Filters\sudahLogin->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('/', 'before')
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-31 23:30:33 --> Allowed fields must be specified for model: App\Models\homeModel
+#0 C:\xampp\htdocs\repository\ci4\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\home...')
+#1 C:\xampp\htdocs\repository\ci4\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\xampp\htdocs\repository\ci4\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\xampp\htdocs\repository\ci4\app\Controllers\Home.php(73): CodeIgniter\Model->insert(Array)
+#4 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Home->insertLayanan()
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2021-12-31 23:31:44 --> Unknown column 'updated_at' in 'field list'
+CRITICAL - 2021-12-31 23:31:44 --> Unknown column 'updated_at' in 'field list'
+#0 C:\xampp\htdocs\repository\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ho...', 0)
+#1 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ho...')
+#2 C:\xampp\htdocs\repository\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ho...')
+#3 C:\xampp\htdocs\repository\ci4\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ho...', Array, false)
+#4 C:\xampp\htdocs\repository\ci4\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\repository\ci4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\repository\ci4\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\repository\ci4\app\Controllers\Home.php(73): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\Home->insertLayanan()
+#9 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}

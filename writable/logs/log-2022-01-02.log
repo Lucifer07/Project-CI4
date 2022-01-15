@@ -1,0 +1,224 @@
+CRITICAL - 2022-01-02 09:04:23 --> syntax error, unexpected token "=>", expecting "]"
+#0 C:\xampp\htdocs\repository\ci4\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('register')
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('register')
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-02 09:04:39 --> Class "Controller" not found
+#0 C:\xampp\htdocs\repository\ci4\system\Router\Router.php(519): include_once()
+#1 C:\xampp\htdocs\repository\ci4\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('register')
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('register')
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-02 09:04:42 --> Class "BaseController" not found
+#0 C:\xampp\htdocs\repository\ci4\system\Router\Router.php(519): include_once()
+#1 C:\xampp\htdocs\repository\ci4\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('register')
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('register')
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-02 09:04:53 --> Invalid file: /register.php
+#0 C:\xampp\htdocs\repository\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/register.php')
+#1 C:\xampp\htdocs\repository\ci4\system\Common.php(1097): CodeIgniter\View\View->render('/register', Array, true)
+#2 C:\xampp\htdocs\repository\ci4\app\Controllers\register.php(12): view('/register', Array)
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\register->index()
+#4 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\register))
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-01-02 10:12:54 --> password_hash() expects at least 2 arguments, 1 given
+#0 C:\xampp\htdocs\repository\ci4\app\Controllers\register.php(27): password_hash('x0121oke')
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\register->insert()
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\register))
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-02 10:42:43 --> syntax error, unexpected token ";"
+#0 C:\xampp\htdocs\repository\ci4\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\repository\ci4\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-01-02 20:04:10 --> syntax error, unexpected token "public", expecting end of file
+#0 C:\xampp\htdocs\repository\ci4\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('register')
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('register')
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-02 20:09:26 --> Attempt to read property "password" on array
+#0 C:\xampp\htdocs\repository\ci4\app\Controllers\login.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 27)
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\login->cek_login()
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-02 20:10:55 --> syntax error, unexpected token "[", expecting identifier or variable or "{" or "$"
+#0 C:\xampp\htdocs\repository\ci4\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\repository\ci4\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-01-02 20:11:15 --> syntax error, unexpected token "[", expecting identifier or variable or "{" or "$"
+#0 C:\xampp\htdocs\repository\ci4\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('login/cek_login')
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('login/cek_login')
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-02 20:19:57 --> Unclosed '{' on line 26 does not match ')'
+#0 C:\xampp\htdocs\repository\ci4\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('login/logout')
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('login/logout')
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-02 20:43:55 --> Too few arguments to function App\Controllers\brosur::editBrosur(), 0 passed in C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php on line 824 and exactly 1 expected
+#0 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\brosur->editBrosur()
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\brosur))
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-01-02 20:57:23 --> syntax error, unexpected single-quoted string "foto", expecting "]"
+#0 C:\xampp\htdocs\repository\ci4\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\repository\ci4\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-01-02 20:58:08 --> Call to a member function getError() on null
+#0 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\brosur->updateBrosur('2')
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\brosur))
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-01-02 21:14:53 --> There is no data to insert.
+#0 C:\xampp\htdocs\repository\ci4\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\xampp\htdocs\repository\ci4\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, false)
+#2 C:\xampp\htdocs\repository\ci4\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#3 C:\xampp\htdocs\repository\ci4\app\Controllers\blog.php(79): CodeIgniter\BaseModel->save(Array)
+#4 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\blog->updateBlog('1')
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\blog))
+#6 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-01-02 21:31:23 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\repository\ci4\app\Views\admin\edit\editinfo.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 9)
+#1 C:\xampp\htdocs\repository\ci4\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\repository\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\repository\ci4\system\Common.php(1097): CodeIgniter\View\View->render('admin/edit/edit...', Array, true)
+#4 C:\xampp\htdocs\repository\ci4\app\Controllers\infoperusahaan.php(60): view('admin/edit/edit...', Array)
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\infoperusahaan->editinfo('...')
+#6 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\infoperusahaan))
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-02 21:31:23 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\repository\ci4\app\Views\admin\edit\editinfo.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 9)
+#1 C:\xampp\htdocs\repository\ci4\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\repository\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\repository\ci4\system\Common.php(1097): CodeIgniter\View\View->render('admin/edit/edit...', Array, true)
+#4 C:\xampp\htdocs\repository\ci4\app\Controllers\infoperusahaan.php(60): view('admin/edit/edit...', Array)
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\infoperusahaan->editinfo('...')
+#6 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\infoperusahaan))
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-02 22:06:49 --> Undefined variable $brands
+#0 C:\xampp\htdocs\repository\ci4\app\Views\admin\brandadmin.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 15)
+#1 C:\xampp\htdocs\repository\ci4\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\repository\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\repository\ci4\system\Common.php(1097): CodeIgniter\View\View->render('admin/brandAdmi...', Array, true)
+#4 C:\xampp\htdocs\repository\ci4\app\Controllers\brand.php(20): view('admin/brandAdmi...')
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\brand->index()
+#6 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\brand))
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-02 22:07:42 --> Undefined variable $brands
+#0 C:\xampp\htdocs\repository\ci4\app\Views\admin\brandadmin.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 15)
+#1 C:\xampp\htdocs\repository\ci4\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\repository\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\repository\ci4\system\Common.php(1097): CodeIgniter\View\View->render('admin/brandAdmi...', Array, true)
+#4 C:\xampp\htdocs\repository\ci4\app\Controllers\brand.php(20): view('admin/brandAdmi...')
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\brand->index()
+#6 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\brand))
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-02 22:09:26 --> Undefined variable $hp
+#0 C:\xampp\htdocs\repository\ci4\app\Views\admin\brandadmin.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20)
+#1 C:\xampp\htdocs\repository\ci4\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\repository\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\repository\ci4\system\Common.php(1097): CodeIgniter\View\View->render('admin/brandAdmi...', Array, true)
+#4 C:\xampp\htdocs\repository\ci4\app\Controllers\brand.php(20): view('admin/brandAdmi...', Array)
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\brand->index()
+#6 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\brand))
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-02 22:09:52 --> Undefined variable $hp
+#0 C:\xampp\htdocs\repository\ci4\app\Views\admin\brandadmin.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20)
+#1 C:\xampp\htdocs\repository\ci4\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\repository\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\repository\ci4\system\Common.php(1097): CodeIgniter\View\View->render('admin/brandAdmi...', Array, true)
+#4 C:\xampp\htdocs\repository\ci4\app\Controllers\brand.php(20): view('admin/brandAdmi...', Array)
+#5 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\brand->index()
+#6 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\brand))
+#7 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-02 22:27:23 --> Call to a member function first() on array
+#0 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\brand->delete('1')
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\brand))
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-01-02 22:28:01 --> Call to a member function first() on array
+#0 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\brand->delete('1')
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\brand))
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-01-02 22:28:13 --> Call to a member function first() on array
+#0 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(824): App\Controllers\brand->delete('1')
+#1 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\brand))
+#2 C:\xampp\htdocs\repository\ci4\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\repository\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\repository\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
